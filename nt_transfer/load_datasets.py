@@ -302,7 +302,7 @@ def read_svhn_data(path_dataset, STANDARDIZE_BOOL = True):
     return dataset
 
 class Dataset(object):
-    def __init__(self, datasource, path_data = '/tungstenfs/scratch/gzenke/liutian/myData/', STANDARDIZE_BOOL  = True,  VALIDATION_FRACTION = 0.1, LOAD_TRAIN_PORTION = 1.0, **kwargs):
+    def __init__(self, datasource, path_data = '/Users/usaxena/programs/neural-tangent-transfer/data/', STANDARDIZE_BOOL  = True,  VALIDATION_FRACTION = 0.1, LOAD_TRAIN_PORTION = 1.0, **kwargs):
         self.datasource = datasource
         self.path_data = path_data
         self.rand = onp.random.RandomState(9)

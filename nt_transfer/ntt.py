@@ -274,7 +274,8 @@ class nt_transfer_model():
 #             while os.path.exists(trans_model_dir):
 #                 trans_model_dir = trans_model_dir + '_0'
             
-            os.makedirs(trans_model_dir)
+            if not os.path.exists(trans_model_dir):
+                os.makedirs(trans_model_dir)
 
             np.save(trans_model_dir + '/param_dict.npy', self.param_dict) 
             

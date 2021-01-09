@@ -5,3 +5,6 @@
 __pycache__/
 ntt_results/
 supervised_results/
+.idea/
+.DS_Store
+data/
